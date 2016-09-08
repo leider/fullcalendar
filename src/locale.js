@@ -95,7 +95,7 @@ var momComputableOptions = {
 
 	// Produces format strings like "ddd M/D" -> "Fri 9/15"
 	dayOfMonthFormat: function(momOptions, fcOptions) {
-		var format = momOptions.longDateFormat('l'); // for the format like "M/D/YYYY"
+		var format = momOptions.longDateFormat('L'); // for the format like "M/D/YYYY"
 
 		// strip the year off the edge, as well as other misc non-whitespace chars
 		format = format.replace(/^Y+[^\w\s]*|[^\w\s]*Y+$/g, '');
